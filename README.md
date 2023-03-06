@@ -7,10 +7,25 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 - Pseudocode!!
 - Ask clarifying questions
 
-### 📚 User Stories
+### 📚 User Stories ### EACH USER STORY IS ITS OWN BRANCH ###
 
 - As a user, I can see a page with a three by three grid board game with a question mark in each square.
+
+    branch: grid
+    -iterate over board state to display square component for each element
+    -Use styling to establish grid using flexbox
+        -Each box should be its own div
+    -show props inside of square div
+    -center and resize question mark
+
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+
+    branch alert-index
+    -set up onclick on component square div
+    -the onclick will trigger a handle click function that will alert the index of the square component div that was clicked
+    -pass the index prop to the square component
+    -to access the index being clicked , pass index into a function on app.js from square
+    
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.
